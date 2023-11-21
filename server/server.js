@@ -18,7 +18,7 @@ app.get('/doctors/gynecologist',getRandomData)
 app.get('/doctors/dietitian',getRandomData)
 
 
-app.listen(8000,()=>{
+app.listen(PORT,()=>{
     console.log("successfull ok");
 })
 
