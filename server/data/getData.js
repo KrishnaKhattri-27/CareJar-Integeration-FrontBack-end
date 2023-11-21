@@ -1,4 +1,3 @@
-// import { faker } from '@faker-js/faker';
 const { faker } = require('@faker-js/faker');
 
 
@@ -17,18 +16,6 @@ const generateData=()=>{
 
 
 
-// const getDentist=(req,res)=>{
-//     const temp=generateData();
-//     res.json(temp);
-// }
-// const getGyneo=(req,res)=>{
-//     const temp=generateData();
-//     res.json(temp);
-// }
-// const getDietion=(req,res)=>{
-//     const temp=generateData();
-//     res.json(temp);
-// }
 const getRandomData=(req,res)=>{
     const dataArray = [];
     for (let i = 0; i < 10; i++) {
@@ -38,6 +25,3 @@ const getRandomData=(req,res)=>{
 }
 
 module.exports=getRandomData;
-// module.exports=getDentist;
-// module.exports=getGyneo;
-// module.exports=getDietion;
