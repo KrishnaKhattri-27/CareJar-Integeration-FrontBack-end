@@ -1,5 +1,4 @@
 const express=require('express')
-
 const getRandomData=require('./data/getData')
 const app=express();
 

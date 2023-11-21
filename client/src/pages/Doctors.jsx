@@ -9,16 +9,21 @@ const Doctors = () => {
   const [data, setData] = useState([]);
 
   const fetchdata = async () => {
+    const path="https://carejar1.onrender.com"+location.pathname
     await axios
-      .get(location.pathname)
+      .get(path)
       .then((res) => {
         setData(res.data);
       })
       .catch((error) => {
         console.log("error", error);
+        console.log("ok",path);
+
       });
+   
   };
   useEffect(() => {
+    
     fetchdata();
   }, []);
 
